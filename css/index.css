@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    align-content: center;
+    text-align: center;
+
+}
+
+.odontologo{
+    width: 70%;
+}
+
+.hero{
+    background-image: url("https://cdn.pixabay.com/photo/2017/07/23/10/44/dentist-2530990_960_720.jpg");
+    background-size: cover;
+}
+
+.footer{
+    background-color: black;
+    color:rgb(255, 255, 255);
+}
+
+.hero p{
+    color: black;
+    text-shadow: 1px 1px #fff;
+}
