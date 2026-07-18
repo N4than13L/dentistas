@@ -1,534 +1,987 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ARCO Dental — Cada sonrisa tiene su propio arco</title>
-<meta name="description" content="ARCO Dental: consultorio dental especializado en odontología general, estética, ortodoncia e implantes.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARCO Dental — Cada sonrisa tiene su propio arco</title>
+    <meta
+      name="description"
+      content="ARCO Dental: consultorio dental especializado en odontología general, estética, ortodoncia e implantes."
+    />
 
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- Bootstrap CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-<!-- Swiper CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.4/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.4/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
 
-<link href="css/index.css" rel="stylesheet">
-
-</head>
-<body>
-
-<!-- ==========================================================================
+    <!-- css -->
+    <link href="css/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ==========================================================================
      NAVBAR
      ========================================================================== -->
-<nav class="navbar-arco" id="mainNav">
-  <div class="container-fluid d-flex align-items-center justify-content-between">
-    <a href="#top" class="brand-mark">
-      <svg viewBox="0 0 40 24" xmlns="http://www.w3.org/2000/svg"><path d="M2,22 Q20,2 38,22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
-      ARCO
-    </a>
-
-    <div class="d-none d-lg-flex align-items-center nav-links">
-      <a href="#servicios">Servicios</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#equipo">Equipo</a>
-      <a href="#testimonios">Testimonios</a>
-      <a href="#galeria">Galería</a>
-      <a href="#faq">Preguntas</a>
-    </div>
-
-    <div class="d-flex align-items-center">
-      <span class="nav-phone d-none d-md-inline">+1 (809) 555-0182</span>
-      <a href="#cita" class="btn-eucalyptus">Agendar cita</a>
-    </div>
-  </div>
-</nav>
-
-<!-- ==========================================================================
-     HERO
-     ========================================================================== -->
-<header class="hero" id="top">
-  <div class="hero-arch-wrap">
-    <svg viewBox="0 0 1400 420" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <path id="heroArchPath" class="hero-arch-path" d="M60,380 C 60,140 320,40 700,40 C 1080,40 1340,140 1340,380"/>
-      <g class="hero-arch-ticks" id="heroArchTicks"></g>
-    </svg>
-  </div>
-
-  <div class="container hero-content">
-    <div class="row">
-      <div class="col-lg-8">
-        <span class="hero-kicker">Consultorio dental · Puerto Plata</span>
-        <h1 class="hero-title">Cada sonrisa<br>tiene su propio <em>arco</em>.</h1>
-        <p class="hero-sub">En ARCO combinamos odontología de precisión con un trato cercano. Diseñamos cada tratamiento a partir de la forma única de tu sonrisa, no de un molde estándar.</p>
-        <div class="hero-cta-row">
-          <a href="#cita" class="btn-coral">Reservar una consulta</a>
-          <a href="#servicios" class="btn-outline-line" style="color:var(--ink); border-color:var(--ink);">Ver especialidades</a>
-        </div>
-
-        <div class="hero-stats">
-          <div>
-            <div class="hero-stat-num"><span class="counter" data-target="14">0</span>+</div>
-            <div class="hero-stat-label">Años de experiencia</div>
-          </div>
-          <div>
-            <div class="hero-stat-num"><span class="counter" data-target="6200">0</span>+</div>
-            <div class="hero-stat-label">Pacientes atendidos</div>
-          </div>
-          <div>
-            <div class="hero-stat-num"><span class="counter" data-target="98">0</span>%</div>
-            <div class="hero-stat-label">Satisfacción</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-<div class="arch-divider">
-  <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,10 Q720,60 1440,10"/></svg>
-</div>
-
-<!-- ==========================================================================
-     SERVICIOS
-     ========================================================================== -->
-<section class="services-section section-pad" id="servicios">
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-lg-7 reveal-up">
-        <span class="eyebrow">Especialidades</span>
-        <h2 class="section-title">Seis formas de cuidar<br>tu arco dental.</h2>
-      </div>
-      <div class="col-lg-4 offset-lg-1 d-flex align-items-end reveal-up">
-        <p class="section-lede">Desde limpiezas de rutina hasta rehabilitaciones completas, cada tratamiento parte de un diagnóstico digital detallado.</p>
-      </div>
-    </div>
-
-    <div class="row g-4">
-      <!-- Card 1 -->
-      <div class="col-md-6 col-lg-4 reveal-up">
-        <div class="service-card">
-          <span class="service-tag">Tratamiento · 01</span>
-          <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M24 6c-5 0-8 3-11 3-4 0-7 4-7 10 0 9 4 20 8 20 3 0 3-6 10-6s7 6 10 6c4 0 8-11 8-20 0-6-3-10-7-10-3 0-6-3-11-3Z"/></svg>
-          <h4>Odontología general</h4>
-          <p>Diagnóstico, limpiezas profundas, resinas y prevención para mantener tu boca sana todo el año.</p>
-        </div>
-      </div>
-      <!-- Card 2 -->
-      <div class="col-md-6 col-lg-4 reveal-up">
-        <div class="service-card">
-          <span class="service-tag">Tratamiento · 02</span>
-          <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="8" y="18" width="32" height="12" rx="6"/><path d="M14 18v12M22 18v12M30 18v12"/></svg>
-          <h4>Ortodoncia</h4>
-          <p>Brackets tradicionales e invisibles para alinear tu arco dental de forma gradual y cómoda.</p>
-        </div>
-      </div>
-      <!-- Card 3 -->
-      <div class="col-md-6 col-lg-4 reveal-up">
-        <div class="service-card">
-          <span class="service-tag">Tratamiento · 03</span>
-          <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M24 6 L38 14 V28 C38 36 32 42 24 44 C16 42 10 36 10 28 V14 Z"/><path d="M18 24l4 4 8-8"/></svg>
-          <h4>Estética dental</h4>
-          <p>Blanqueamientos, carillas y diseño de sonrisa a partir de la proporción natural de tu rostro.</p>
-        </div>
-      </div>
-      <!-- Card 4 -->
-      <div class="col-md-6 col-lg-4 reveal-up">
-        <div class="service-card">
-          <span class="service-tag">Tratamiento · 04</span>
-          <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M24 4v14M18 8l6-4 6 4"/><path d="M14 22h20v10c0 7-4 12-10 12s-10-5-10-12Z"/></svg>
-          <h4>Implantes</h4>
-          <p>Reemplazo permanente de piezas perdidas con planificación 3D e integración ósea guiada.</p>
-        </div>
-      </div>
-      <!-- Card 5 -->
-      <div class="col-md-6 col-lg-4 reveal-up">
-        <div class="service-card">
-          <span class="service-tag">Tratamiento · 05</span>
-          <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="24" cy="24" r="18"/><path d="M24 14v10l7 5"/></svg>
-          <h4>Endodoncia</h4>
-          <p>Tratamientos de conducto sin dolor, con anestesia guiada y seguimiento personalizado.</p>
-        </div>
-      </div>
-      <!-- Card 6 -->
-      <div class="col-md-6 col-lg-4 reveal-up">
-        <div class="service-card">
-          <span class="service-tag">Tratamiento · 06</span>
-          <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="17" cy="16" r="6"/><circle cx="31" cy="16" r="6"/><path d="M8 40c0-8 5-12 9-12M40 40c0-8-5-12-9-12"/></svg>
-          <h4>Odontopediatría</h4>
-          <p>Primeras visitas y tratamientos pensados para que los más pequeños pierdan el miedo al dentista.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ==========================================================================
-     POR QUÉ ELEGIRNOS
-     ========================================================================== -->
-<section class="why-section section-pad" id="nosotros">
-  <div class="container">
-    <div class="row align-items-center g-5">
-      <div class="col-lg-5 reveal-up">
-        <img class="why-img" src="https://picsum.photos/seed/arco-clinic/700/900" alt="Interior del consultorio ARCO Dental" loading="lazy">
-      </div>
-      <div class="col-lg-6 offset-lg-1 reveal-up">
-        <span class="eyebrow">Por qué ARCO</span>
-        <h2 class="section-title mb-4">Tecnología de precisión,<br>trato de barrio.</h2>
-        <ul class="why-list">
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12l5 5L20 6"/></svg>
-            <div>
-              <strong>Diagnóstico digital 3D</strong>
-              <span class="desc">Escáner intraoral sin moldes de yeso: más rápido, más cómodo, más preciso.</span>
-            </div>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12l5 5L20 6"/></svg>
-            <div>
-              <strong>Plan de tratamiento transparente</strong>
-              <span class="desc">Sabrás el costo y los tiempos antes de empezar, sin sorpresas.</span>
-            </div>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12l5 5L20 6"/></svg>
-            <div>
-              <strong>Esterilización certificada</strong>
-              <span class="desc">Protocolos de bioseguridad auditados en cada instrumento y sala.</span>
-            </div>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12l5 5L20 6"/></svg>
-            <div>
-              <strong>Financiamiento flexible</strong>
-              <span class="desc">Planes de pago en cuotas para tratamientos de mayor alcance.</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="arch-divider">
-  <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,50 Q720,0 1440,50"/></svg>
-</div>
-
-<!-- ==========================================================================
-     EQUIPO (Swiper)
-     ========================================================================== -->
-<section class="team-section section-pad" id="equipo">
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-lg-7 reveal-up">
-        <span class="eyebrow">Equipo clínico</span>
-        <h2 class="section-title">Especialistas detrás<br>de cada arco.</h2>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid px-lg-5">
-    <div class="swiper teamSwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide team-card">
-          <img class="team-photo" src="https://picsum.photos/seed/dra-mejia/500/650" alt="Dra. Camila Mejía" loading="lazy">
-          <h4>Dra. Camila Mejía</h4>
-          <span class="team-role">Odontología general</span>
-        </div>
-        <div class="swiper-slide team-card">
-          <img class="team-photo" src="https://picsum.photos/seed/dr-fernandez/500/650" alt="Dr. Julián Fernández" loading="lazy">
-          <h4>Dr. Julián Fernández</h4>
-          <span class="team-role">Ortodoncia</span>
-        </div>
-        <div class="swiper-slide team-card">
-          <img class="team-photo" src="https://picsum.photos/seed/dra-santos/500/650" alt="Dra. Renata Santos" loading="lazy">
-          <h4>Dra. Renata Santos</h4>
-          <span class="team-role">Estética dental</span>
-        </div>
-        <div class="swiper-slide team-card">
-          <img class="team-photo" src="https://picsum.photos/seed/dr-vargas/500/650" alt="Dr. Ismael Vargas" loading="lazy">
-          <h4>Dr. Ismael Vargas</h4>
-          <span class="team-role">Implantología</span>
-        </div>
-        <div class="swiper-slide team-card">
-          <img class="team-photo" src="https://picsum.photos/seed/dra-roque/500/650" alt="Dra. Paula Roque" loading="lazy">
-          <h4>Dra. Paula Roque</h4>
-          <span class="team-role">Odontopediatría</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="swiper-nav-row light-nav container">
-      <button class="swiper-btn team-prev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></button>
-      <button class="swiper-btn team-next" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button>
-    </div>
-  </div>
-</section>
-
-<!-- ==========================================================================
-     TESTIMONIOS (Swiper)
-     ========================================================================== -->
-<section class="testimonials-section section-pad" id="testimonios">
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-lg-7 reveal-up">
-        <span class="eyebrow">Testimonios</span>
-        <h2 class="section-title">Lo que dicen<br>nuestros pacientes.</h2>
-      </div>
-    </div>
-
-    <div class="swiper testimonialSwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="testimonial-card">
-            <p class="testimonial-quote">"Nunca pensé que iría al dentista sin nervios. El equipo de ARCO explica cada paso antes de tocarte."</p>
-            <div class="testimonial-name">Marisol Peña</div>
-            <div class="testimonial-meta">Paciente desde 2021</div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="testimonial-card">
-            <p class="testimonial-quote">"Mi tratamiento de ortodoncia fue exactamente como me lo explicaron: tiempos claros y resultados visibles cada mes."</p>
-            <div class="testimonial-name">Andrés Cabrera</div>
-            <div class="testimonial-meta">Ortodoncia · 18 meses</div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="testimonial-card">
-            <p class="testimonial-quote">"Llevé a mi hija de 5 años y la trataron con una paciencia enorme. Ahora hasta pide ir al dentista."</p>
-            <div class="testimonial-name">Yolanda Ureña</div>
-            <div class="testimonial-meta">Odontopediatría</div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="testimonial-card">
-            <p class="testimonial-quote">"El implante quedó perfecto y el plan de pagos me permitió hacerlo sin descuadrar mi presupuesto."</p>
-            <div class="testimonial-name">Rafael Objío</div>
-            <div class="testimonial-meta">Implantología</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="swiper-nav-row dark-nav">
-      <button class="swiper-btn testi-prev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></button>
-      <button class="swiper-btn testi-next" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button>
-    </div>
-  </div>
-</section>
-
-<!-- ==========================================================================
-     GALERÍA (Swiper)
-     ========================================================================== -->
-<section class="gallery-section section-pad" id="galeria">
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-lg-7 reveal-up">
-        <span class="eyebrow">Galería</span>
-        <h2 class="section-title">Un vistazo<br>al consultorio.</h2>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid px-lg-5">
-    <div class="swiper gallerySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img class="gallery-img" src="https://picsum.photos/seed/arco-1/700/500" alt="Recepción de ARCO Dental" loading="lazy"></div>
-        <div class="swiper-slide"><img class="gallery-img" src="https://picsum.photos/seed/arco-2/700/500" alt="Sala de tratamiento" loading="lazy"></div>
-        <div class="swiper-slide"><img class="gallery-img" src="https://picsum.photos/seed/arco-3/700/500" alt="Equipo de escaneo digital" loading="lazy"></div>
-        <div class="swiper-slide"><img class="gallery-img" src="https://picsum.photos/seed/arco-4/700/500" alt="Sala de espera" loading="lazy"></div>
-        <div class="swiper-slide"><img class="gallery-img" src="https://picsum.photos/seed/arco-5/700/500" alt="Consultorio pediátrico" loading="lazy"></div>
-      </div>
-    </div>
-    <div class="swiper-nav-row light-nav container">
-      <button class="swiper-btn gal-prev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></button>
-      <button class="swiper-btn gal-next" aria-label="Siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button>
-    </div>
-  </div>
-</section>
-
-<!-- ==========================================================================
-     CITA / FORMULARIO
-     ========================================================================== -->
-<section class="appointment-section section-pad" id="cita">
-  <div class="container">
-    <div class="row g-5">
-      <div class="col-lg-5 reveal-up">
-        <span class="eyebrow">Agenda tu cita</span>
-        <h2 class="section-title mb-3">Empecemos por<br>conocer tu sonrisa.</h2>
-        <p class="section-lede">Completa el formulario y nuestro equipo te contactará en menos de 24 horas para confirmar tu cita.</p>
-
-        <div class="mt-5" style="font-family:var(--font-mono); font-size:.85rem; color:rgba(251,250,247,.7);">
-          <p class="mb-1">TEL &nbsp;+1 (809) 555-0182</p>
-          <p class="mb-1">EMAIL &nbsp;hola@arcodental.do</p>
-          <p class="mb-0">HORARIO &nbsp;Lun–Vie 8:00–18:00 · Sáb 8:00–13:00</p>
-        </div>
-      </div>
-
-      <div class="col-lg-6 offset-lg-1 reveal-up">
-        <form id="appointmentForm" novalidate>
-          <div class="row g-4">
-            <div class="col-md-6">
-              <label class="form-label-arco">Nombre completo</label>
-              <input type="text" class="form-control form-control-arco" placeholder="Tu nombre" required>
-            </div>
-            <div class="col-md-6">
-              <label class="form-label-arco">Teléfono</label>
-              <input type="tel" class="form-control form-control-arco" placeholder="809 000 0000" required>
-            </div>
-            <div class="col-md-6">
-              <label class="form-label-arco">Correo electrónico</label>
-              <input type="email" class="form-control form-control-arco" placeholder="tucorreo@email.com" required>
-            </div>
-            <div class="col-md-6">
-              <label class="form-label-arco">Tratamiento de interés</label>
-              <select class="form-select form-control-arco" required>
-                <option value="" selected disabled>Selecciona una opción</option>
-                <option>Odontología general</option>
-                <option>Ortodoncia</option>
-                <option>Estética dental</option>
-                <option>Implantes</option>
-                <option>Endodoncia</option>
-                <option>Odontopediatría</option>
-              </select>
-            </div>
-            <div class="col-md-6">
-              <label class="form-label-arco">Fecha preferida</label>
-              <input type="date" class="form-control form-control-arco" required>
-            </div>
-            <div class="col-md-6">
-              <label class="form-label-arco">Horario preferido</label>
-              <select class="form-select form-control-arco" required>
-                <option value="" selected disabled>Selecciona una opción</option>
-                <option>Mañana</option>
-                <option>Tarde</option>
-              </select>
-            </div>
-            <div class="col-12">
-              <label class="form-label-arco">Mensaje (opcional)</label>
-              <textarea class="form-control form-control-arco" rows="3" placeholder="Cuéntanos brevemente qué necesitas"></textarea>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn-coral w-100 w-md-auto">Solicitar cita</button>
-              <div class="form-success" id="formSuccess">✓ Solicitud recibida. Te contactaremos muy pronto para confirmar tu cita.</div>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ==========================================================================
-     FAQ
-     ========================================================================== -->
-<section class="faq-section section-pad" id="faq">
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-lg-7 reveal-up">
-        <span class="eyebrow">Preguntas frecuentes</span>
-        <h2 class="section-title">Antes de tu<br>primera visita.</h2>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-9 reveal-up">
-        <div class="accordion accordion-arco" id="faqAccordion">
-          <div class="accordion-item">
-            <h3 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">¿Qué debo llevar a mi primera consulta?</button>
-            </h3>
-            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">Basta con tu identificación y, si tienes, radiografías o estudios dentales previos. Si cuentas con seguro dental, trae también tu carné.</div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h3 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">¿Aceptan seguros dentales?</button>
-            </h3>
-            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">Trabajamos con las principales aseguradoras del país. Escríbenos con el nombre de tu póliza y confirmamos cobertura antes de tu cita.</div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h3 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">¿Cuánto dura una limpieza dental?</button>
-            </h3>
-            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">Una limpieza de rutina toma entre 40 y 60 minutos, incluyendo revisión general y aplicación de flúor si es necesario.</div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h3 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">¿Ofrecen planes de financiamiento?</button>
-            </h3>
-            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">Sí, para tratamientos de ortodoncia, implantes y estética dental ofrecemos planes en cuotas mensuales sin intereses hasta en 6 meses.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ==========================================================================
-     FOOTER
-     ========================================================================== -->
-<footer class="footer-arco">
-  <div class="container">
-    <div class="row g-5">
-      <div class="col-lg-4">
-        <a href="#top" class="brand-mark mb-3 d-inline-flex">
-          <svg viewBox="0 0 40 24" xmlns="http://www.w3.org/2000/svg"><path d="M2,22 Q20,2 38,22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+    <nav class="navbar-arco" id="mainNav">
+      <div
+        class="container-fluid d-flex align-items-center justify-content-between"
+      >
+        <a href="#top" class="brand-mark">
+          <svg viewBox="0 0 40 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2,22 Q20,2 38,22"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.4"
+              stroke-linecap="round"
+            />
+          </svg>
           ARCO
         </a>
-        <p style="max-width:32ch; font-size:.92rem;">Consultorio dental enfocado en tratamientos de precisión y una experiencia de paciente cercana.</p>
-      </div>
-      <div class="col-6 col-lg-2">
-        <div class="footer-heading">Navegación</div>
-        <ul>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#equipo">Equipo</a></li>
-          <li><a href="#testimonios">Testimonios</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-lg-2">
-        <div class="footer-heading">Contacto</div>
-        <ul>
-          <li><a href="tel:+18095550182">+1 809 555 0182</a></li>
-          <li><a href="mailto:hola@arcodental.do">hola@arcodental.do</a></li>
-          <li>Puerto Plata, RD</li>
-        </ul>
-      </div>
-      <div class="col-lg-4">
-        <div class="footer-heading">Horario</div>
-        <ul>
-          <li>Lunes – Viernes: 8:00 am – 6:00 pm</li>
-          <li>Sábados: 8:00 am – 1:00 pm</li>
-          <li>Domingos: cerrado</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 ARCO Dental. Todos los derechos reservados.</span>
-      <span>Diseño &amp; desarrollo — plantilla de landing page</span>
-    </div>
-  </div>
-</footer>
 
-<!-- ==========================================================================
+        <div class="d-none d-lg-flex align-items-center nav-links">
+          <a href="#servicios">Servicios</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#equipo">Equipo</a>
+          <a href="#testimonios">Testimonios</a>
+          <a href="#galeria">Galería</a>
+          <a href="#faq">Preguntas</a>
+        </div>
+
+        <div class="d-flex align-items-center">
+          <span class="nav-phone d-none d-md-inline">+1 (809) 555-0182</span>
+          <a href="#cita" class="btn-eucalyptus d-none d-lg-inline-flex"
+            >Agendar cita</a
+          >
+          <button
+            class="nav-burger"
+            id="navBurger"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+          >
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Fullscreen mobile menu (tablets & phones) -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="mobile-menu-links">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#faq">Preguntas</a></li>
+      </ul>
+      <div class="mobile-menu-foot">
+        <span class="nav-phone">+1 (809) 555-0182</span>
+        <a href="#cita" class="btn-coral">Agendar cita</a>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+     HERO
+     ========================================================================== -->
+    <header class="hero" id="top">
+      <div class="hero-arch-wrap">
+        <svg
+          viewBox="0 0 1400 420"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            id="heroArchPath"
+            class="hero-arch-path"
+            d="M60,380 C 60,140 320,40 700,40 C 1080,40 1340,140 1340,380"
+          />
+          <g class="hero-arch-ticks" id="heroArchTicks"></g>
+        </svg>
+      </div>
+
+      <div class="container hero-content">
+        <div class="row">
+          <div class="col-lg-8">
+            <span class="hero-kicker">Consultorio dental · Puerto Plata</span>
+            <h1 class="hero-title">
+              Cada sonrisa<br />tiene su propio <em>arco</em>.
+            </h1>
+            <p class="hero-sub">
+              En ARCO combinamos odontología de precisión con un trato cercano.
+              Diseñamos cada tratamiento a partir de la forma única de tu
+              sonrisa, no de un molde estándar.
+            </p>
+            <div class="hero-cta-row">
+              <a href="#cita" class="btn-coral">Reservar una consulta</a>
+              <a
+                href="#servicios"
+                class="btn-outline-line"
+                style="color: var(--ink); border-color: var(--ink)"
+                >Ver especialidades</a
+              >
+            </div>
+
+            <div class="hero-stats">
+              <div>
+                <div class="hero-stat-num">
+                  <span class="counter" data-target="14">0</span>+
+                </div>
+                <div class="hero-stat-label">Años de experiencia</div>
+              </div>
+              <div>
+                <div class="hero-stat-num">
+                  <span class="counter" data-target="6200">0</span>+
+                </div>
+                <div class="hero-stat-label">Pacientes atendidos</div>
+              </div>
+              <div>
+                <div class="hero-stat-num">
+                  <span class="counter" data-target="98">0</span>%
+                </div>
+                <div class="hero-stat-label">Satisfacción</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="arch-divider">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path d="M0,10 Q720,60 1440,10" />
+      </svg>
+    </div>
+
+    <!-- ==========================================================================
+     SERVICIOS
+     ========================================================================== -->
+    <section class="services-section section-pad" id="servicios">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 reveal-up">
+            <span class="eyebrow">Especialidades</span>
+            <h2 class="section-title">
+              Seis formas de cuidar<br />tu arco dental.
+            </h2>
+          </div>
+          <div class="col-lg-4 offset-lg-1 d-flex align-items-end reveal-up">
+            <p class="section-lede">
+              Desde limpiezas de rutina hasta rehabilitaciones completas, cada
+              tratamiento parte de un diagnóstico digital detallado.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-4 reveal-up">
+            <div class="service-card">
+              <span class="service-tag">Tratamiento · 01</span>
+              <svg
+                class="service-icon"
+                viewBox="0 0 48 48"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <path
+                  d="M24 6c-5 0-8 3-11 3-4 0-7 4-7 10 0 9 4 20 8 20 3 0 3-6 10-6s7 6 10 6c4 0 8-11 8-20 0-6-3-10-7-10-3 0-6-3-11-3Z"
+                />
+              </svg>
+              <h4>Odontología general</h4>
+              <p>
+                Diagnóstico, limpiezas profundas, resinas y prevención para
+                mantener tu boca sana todo el año.
+              </p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-4 reveal-up">
+            <div class="service-card">
+              <span class="service-tag">Tratamiento · 02</span>
+              <svg
+                class="service-icon"
+                viewBox="0 0 48 48"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <rect x="8" y="18" width="32" height="12" rx="6" />
+                <path d="M14 18v12M22 18v12M30 18v12" />
+              </svg>
+              <h4>Ortodoncia</h4>
+              <p>
+                Brackets tradicionales e invisibles para alinear tu arco dental
+                de forma gradual y cómoda.
+              </p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-4 reveal-up">
+            <div class="service-card">
+              <span class="service-tag">Tratamiento · 03</span>
+              <svg
+                class="service-icon"
+                viewBox="0 0 48 48"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <path
+                  d="M24 6 L38 14 V28 C38 36 32 42 24 44 C16 42 10 36 10 28 V14 Z"
+                />
+                <path d="M18 24l4 4 8-8" />
+              </svg>
+              <h4>Estética dental</h4>
+              <p>
+                Blanqueamientos, carillas y diseño de sonrisa a partir de la
+                proporción natural de tu rostro.
+              </p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-md-6 col-lg-4 reveal-up">
+            <div class="service-card">
+              <span class="service-tag">Tratamiento · 04</span>
+              <svg
+                class="service-icon"
+                viewBox="0 0 48 48"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <path d="M24 4v14M18 8l6-4 6 4" />
+                <path d="M14 22h20v10c0 7-4 12-10 12s-10-5-10-12Z" />
+              </svg>
+              <h4>Implantes</h4>
+              <p>
+                Reemplazo permanente de piezas perdidas con planificación 3D e
+                integración ósea guiada.
+              </p>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="col-md-6 col-lg-4 reveal-up">
+            <div class="service-card">
+              <span class="service-tag">Tratamiento · 05</span>
+              <svg
+                class="service-icon"
+                viewBox="0 0 48 48"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <circle cx="24" cy="24" r="18" />
+                <path d="M24 14v10l7 5" />
+              </svg>
+              <h4>Endodoncia</h4>
+              <p>
+                Tratamientos de conducto sin dolor, con anestesia guiada y
+                seguimiento personalizado.
+              </p>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="col-md-6 col-lg-4 reveal-up">
+            <div class="service-card">
+              <span class="service-tag">Tratamiento · 06</span>
+              <svg
+                class="service-icon"
+                viewBox="0 0 48 48"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <circle cx="17" cy="16" r="6" />
+                <circle cx="31" cy="16" r="6" />
+                <path d="M8 40c0-8 5-12 9-12M40 40c0-8-5-12-9-12" />
+              </svg>
+              <h4>Odontopediatría</h4>
+              <p>
+                Primeras visitas y tratamientos pensados para que los más
+                pequeños pierdan el miedo al dentista.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+     POR QUÉ ELEGIRNOS
+     ========================================================================== -->
+    <section class="why-section section-pad" id="nosotros">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5 reveal-up">
+            <img
+              class="why-img"
+              src="https://picsum.photos/seed/arco-clinic/700/900"
+              alt="Interior del consultorio ARCO Dental"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6 offset-lg-1 reveal-up">
+            <span class="eyebrow">Por qué ARCO</span>
+            <h2 class="section-title mb-4">
+              Tecnología de precisión,<br />trato de barrio.
+            </h2>
+            <ul class="why-list">
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M4 12l5 5L20 6" />
+                </svg>
+                <div>
+                  <strong>Diagnóstico digital 3D</strong>
+                  <span class="desc"
+                    >Escáner intraoral sin moldes de yeso: más rápido, más
+                    cómodo, más preciso.</span
+                  >
+                </div>
+              </li>
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M4 12l5 5L20 6" />
+                </svg>
+                <div>
+                  <strong>Plan de tratamiento transparente</strong>
+                  <span class="desc"
+                    >Sabrás el costo y los tiempos antes de empezar, sin
+                    sorpresas.</span
+                  >
+                </div>
+              </li>
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M4 12l5 5L20 6" />
+                </svg>
+                <div>
+                  <strong>Esterilización certificada</strong>
+                  <span class="desc"
+                    >Protocolos de bioseguridad auditados en cada instrumento y
+                    sala.</span
+                  >
+                </div>
+              </li>
+              <li>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                >
+                  <path d="M4 12l5 5L20 6" />
+                </svg>
+                <div>
+                  <strong>Financiamiento flexible</strong>
+                  <span class="desc"
+                    >Planes de pago en cuotas para tratamientos de mayor
+                    alcance.</span
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="arch-divider">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path d="M0,50 Q720,0 1440,50" />
+      </svg>
+    </div>
+
+    <!-- ==========================================================================
+     EQUIPO (Swiper)
+     ========================================================================== -->
+    <section class="team-section section-pad" id="equipo">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 reveal-up">
+            <span class="eyebrow">Equipo clínico</span>
+            <h2 class="section-title">
+              Especialistas detrás<br />de cada arco.
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid px-lg-5">
+        <div class="swiper teamSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide team-card">
+              <img
+                class="team-photo"
+                src="https://picsum.photos/seed/dra-mejia/500/650"
+                alt="Dra. Camila Mejía"
+                loading="lazy"
+              />
+              <h4>Dra. Camila Mejía</h4>
+              <span class="team-role">Odontología general</span>
+            </div>
+            <div class="swiper-slide team-card">
+              <img
+                class="team-photo"
+                src="https://picsum.photos/seed/dr-fernandez/500/650"
+                alt="Dr. Julián Fernández"
+                loading="lazy"
+              />
+              <h4>Dr. Julián Fernández</h4>
+              <span class="team-role">Ortodoncia</span>
+            </div>
+            <div class="swiper-slide team-card">
+              <img
+                class="team-photo"
+                src="https://picsum.photos/seed/dra-santos/500/650"
+                alt="Dra. Renata Santos"
+                loading="lazy"
+              />
+              <h4>Dra. Renata Santos</h4>
+              <span class="team-role">Estética dental</span>
+            </div>
+            <div class="swiper-slide team-card">
+              <img
+                class="team-photo"
+                src="https://picsum.photos/seed/dr-vargas/500/650"
+                alt="Dr. Ismael Vargas"
+                loading="lazy"
+              />
+              <h4>Dr. Ismael Vargas</h4>
+              <span class="team-role">Implantología</span>
+            </div>
+            <div class="swiper-slide team-card">
+              <img
+                class="team-photo"
+                src="https://picsum.photos/seed/dra-roque/500/650"
+                alt="Dra. Paula Roque"
+                loading="lazy"
+              />
+              <h4>Dra. Paula Roque</h4>
+              <span class="team-role">Odontopediatría</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-nav-row light-nav container">
+          <button class="swiper-btn team-prev" aria-label="Anterior">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M15 6l-6 6 6 6" />
+            </svg>
+          </button>
+          <button class="swiper-btn team-next" aria-label="Siguiente">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M9 6l6 6-6 6" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+     TESTIMONIOS (Swiper)
+     ========================================================================== -->
+    <section class="testimonials-section section-pad" id="testimonios">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 reveal-up">
+            <span class="eyebrow">Testimonios</span>
+            <h2 class="section-title">Lo que dicen<br />nuestros pacientes.</h2>
+          </div>
+        </div>
+
+        <div class="swiper testimonialSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <p class="testimonial-quote">
+                  "Nunca pensé que iría al dentista sin nervios. El equipo de
+                  ARCO explica cada paso antes de tocarte."
+                </p>
+                <div class="testimonial-name">Marisol Peña</div>
+                <div class="testimonial-meta">Paciente desde 2021</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <p class="testimonial-quote">
+                  "Mi tratamiento de ortodoncia fue exactamente como me lo
+                  explicaron: tiempos claros y resultados visibles cada mes."
+                </p>
+                <div class="testimonial-name">Andrés Cabrera</div>
+                <div class="testimonial-meta">Ortodoncia · 18 meses</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <p class="testimonial-quote">
+                  "Llevé a mi hija de 5 años y la trataron con una paciencia
+                  enorme. Ahora hasta pide ir al dentista."
+                </p>
+                <div class="testimonial-name">Yolanda Ureña</div>
+                <div class="testimonial-meta">Odontopediatría</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <p class="testimonial-quote">
+                  "El implante quedó perfecto y el plan de pagos me permitió
+                  hacerlo sin descuadrar mi presupuesto."
+                </p>
+                <div class="testimonial-name">Rafael Objío</div>
+                <div class="testimonial-meta">Implantología</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-nav-row dark-nav">
+          <button class="swiper-btn testi-prev" aria-label="Anterior">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M15 6l-6 6 6 6" />
+            </svg>
+          </button>
+          <button class="swiper-btn testi-next" aria-label="Siguiente">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M9 6l6 6-6 6" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+     GALERÍA (Swiper)
+     ========================================================================== -->
+    <section class="gallery-section section-pad" id="galeria">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 reveal-up">
+            <span class="eyebrow">Galería</span>
+            <h2 class="section-title">Un vistazo<br />al consultorio.</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid px-lg-5">
+        <div class="swiper gallerySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="gallery-img"
+                src="https://picsum.photos/seed/arco-1/700/500"
+                alt="Recepción de ARCO Dental"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="gallery-img"
+                src="https://picsum.photos/seed/arco-2/700/500"
+                alt="Sala de tratamiento"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="gallery-img"
+                src="https://picsum.photos/seed/arco-3/700/500"
+                alt="Equipo de escaneo digital"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="gallery-img"
+                src="https://picsum.photos/seed/arco-4/700/500"
+                alt="Sala de espera"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="gallery-img"
+                src="https://picsum.photos/seed/arco-5/700/500"
+                alt="Consultorio pediátrico"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-nav-row light-nav container">
+          <button class="swiper-btn gal-prev" aria-label="Anterior">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M15 6l-6 6 6 6" />
+            </svg>
+          </button>
+          <button class="swiper-btn gal-next" aria-label="Siguiente">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M9 6l6 6-6 6" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+     CITA / FORMULARIO
+     ========================================================================== -->
+    <section class="appointment-section section-pad" id="cita">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5 reveal-up">
+            <span class="eyebrow">Agenda tu cita</span>
+            <h2 class="section-title mb-3">
+              Empecemos por<br />conocer tu sonrisa.
+            </h2>
+            <p class="section-lede">
+              Completa el formulario y nuestro equipo te contactará en menos de
+              24 horas para confirmar tu cita.
+            </p>
+
+            <div
+              class="mt-5"
+              style="
+                font-family: var(--font-mono);
+                font-size: 0.85rem;
+                color: rgba(251, 250, 247, 0.7);
+              "
+            >
+              <p class="mb-1">TEL &nbsp;+1 (809) 555-0182</p>
+              <p class="mb-1">EMAIL &nbsp;hola@arcodental.do</p>
+              <p class="mb-0">
+                HORARIO &nbsp;Lun–Vie 8:00–18:00 · Sáb 8:00–13:00
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 offset-lg-1 reveal-up">
+            <form id="appointmentForm" novalidate>
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <label class="form-label-arco">Nombre completo</label>
+                  <input
+                    type="text"
+                    class="form-control form-control-arco"
+                    placeholder="Tu nombre"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label-arco">Teléfono</label>
+                  <input
+                    type="tel"
+                    class="form-control form-control-arco"
+                    placeholder="809 000 0000"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label-arco">Correo electrónico</label>
+                  <input
+                    type="email"
+                    class="form-control form-control-arco"
+                    placeholder="tucorreo@email.com"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label-arco">Tratamiento de interés</label>
+                  <select class="form-select form-control-arco" required>
+                    <option value="" selected disabled>
+                      Selecciona una opción
+                    </option>
+                    <option>Odontología general</option>
+                    <option>Ortodoncia</option>
+                    <option>Estética dental</option>
+                    <option>Implantes</option>
+                    <option>Endodoncia</option>
+                    <option>Odontopediatría</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label-arco">Fecha preferida</label>
+                  <input
+                    type="date"
+                    class="form-control form-control-arco"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label-arco">Horario preferido</label>
+                  <select class="form-select form-control-arco" required>
+                    <option value="" selected disabled>
+                      Selecciona una opción
+                    </option>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label-arco">Mensaje (opcional)</label>
+                  <textarea
+                    class="form-control form-control-arco"
+                    rows="3"
+                    placeholder="Cuéntanos brevemente qué necesitas"
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn-coral w-100 w-md-auto">
+                    Solicitar cita
+                  </button>
+                  <div class="form-success" id="formSuccess">
+                    ✓ Solicitud recibida. Te contactaremos muy pronto para
+                    confirmar tu cita.
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+     FAQ
+     ========================================================================== -->
+    <section class="faq-section section-pad" id="faq">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 reveal-up">
+            <span class="eyebrow">Preguntas frecuentes</span>
+            <h2 class="section-title">Antes de tu<br />primera visita.</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-9 reveal-up">
+            <div class="accordion accordion-arco" id="faqAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq1"
+                  >
+                    ¿Qué debo llevar a mi primera consulta?
+                  </button>
+                </h3>
+                <div
+                  id="faq1"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Basta con tu identificación y, si tienes, radiografías o
+                    estudios dentales previos. Si cuentas con seguro dental,
+                    trae también tu carné.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq2"
+                  >
+                    ¿Aceptan seguros dentales?
+                  </button>
+                </h3>
+                <div
+                  id="faq2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Trabajamos con las principales aseguradoras del país.
+                    Escríbenos con el nombre de tu póliza y confirmamos
+                    cobertura antes de tu cita.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq3"
+                  >
+                    ¿Cuánto dura una limpieza dental?
+                  </button>
+                </h3>
+                <div
+                  id="faq3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Una limpieza de rutina toma entre 40 y 60 minutos,
+                    incluyendo revisión general y aplicación de flúor si es
+                    necesario.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq4"
+                  >
+                    ¿Ofrecen planes de financiamiento?
+                  </button>
+                </h3>
+                <div
+                  id="faq4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Sí, para tratamientos de ortodoncia, implantes y estética
+                    dental ofrecemos planes en cuotas mensuales sin intereses
+                    hasta en 6 meses.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+     FOOTER
+     ========================================================================== -->
+    <footer class="footer-arco">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <a href="#top" class="brand-mark mb-3 d-inline-flex">
+              <svg viewBox="0 0 40 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2,22 Q20,2 38,22"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.4"
+                  stroke-linecap="round"
+                />
+              </svg>
+              ARCO
+            </a>
+            <p style="max-width: 32ch; font-size: 0.92rem">
+              Consultorio dental enfocado en tratamientos de precisión y una
+              experiencia de paciente cercana.
+            </p>
+          </div>
+          <div class="col-6 col-lg-2">
+            <div class="footer-heading">Navegación</div>
+            <ul>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#nosotros">Nosotros</a></li>
+              <li><a href="#equipo">Equipo</a></li>
+              <li><a href="#testimonios">Testimonios</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <div class="footer-heading">Contacto</div>
+            <ul>
+              <li><a href="tel:+18095550182">+1 809 555 0182</a></li>
+              <li>
+                <a href="mailto:hola@arcodental.do">hola@arcodental.do</a>
+              </li>
+              <li>Puerto Plata, RD</li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-heading">Horario</div>
+            <ul>
+              <li>Lunes – Viernes: 8:00 am – 6:00 pm</li>
+              <li>Sábados: 8:00 am – 1:00 pm</li>
+              <li>Domingos: cerrado</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 ARCO Dental. Todos los derechos reservados.</span>
+          <span>Diseño &amp; desarrollo — plantilla de landing page</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ==========================================================================
      SCRIPTS
      ========================================================================== -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.4/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.4/swiper-bundle.min.js"></script>
 
-<script src="js/index.js"></script>
-</body>
+    <script src="js/index.js"></script>
+  </body>
 </html>
