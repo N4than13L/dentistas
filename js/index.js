@@ -237,15 +237,18 @@ document.addEventListener("DOMContentLoaded", function () {
     --------------------------------------------- */
   var btnArriba = document.getElementById("arriba");
 
+  btnArriba.style.display = "none"; // ocultar el boton "arriba" al cargar la pagina
+
   btnArriba.addEventListener("click", function (e) {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: "smooth" });
 
     // ocultar el boton "arriba" cuando el usuario esta en la parte superior de la pagina
-    if (window.scrollY == 0) {
-      btnArriba.style.display = "none";
-    } else {
+    if (window.scrollY > 20) {
+      // btnArriba.style.display = "none";
       btnArriba.style.display = "block";
+    } else {
+      btnArriba.style.display = "none";
     }
   });
 });
