@@ -63,6 +63,9 @@ document.addEventListener("DOMContentLoaded", function () {
   mobileMenu
     .querySelector(".mobile-menu-foot .btn-coral")
     .addEventListener("click", closeMenu);
+  document
+    .getElementById("mobileMenuClose")
+    .addEventListener("click", closeMenu);
 
   // Close automatically if the viewport grows into desktop size
   window.addEventListener("resize", function () {

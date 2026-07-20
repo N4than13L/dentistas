@@ -328,6 +328,36 @@ h4 {
   align-self: flex-start;
 }
 
+.mobile-menu-close {
+  position: absolute;
+  top: 1.4rem;
+  right: 6vw;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(251, 250, 247, 0.3);
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--porcelain);
+  cursor: pointer;
+  transition:
+    background 0.3s,
+    border-color 0.3s,
+    transform 0.3s;
+}
+.mobile-menu-close:hover {
+  background: var(--coral);
+  border-color: var(--coral);
+  color: var(--ink);
+  transform: rotate(90deg);
+}
+.mobile-menu-close svg {
+  width: 18px;
+  height: 18px;
+}
+
 @media (min-width: 992px) {
   .nav-burger,
   .mobile-menu {
@@ -520,7 +550,7 @@ body.menu-open {
   width: 100%;
   aspect-ratio: 4/5;
   object-fit: cover;
-  border-radius: 2px;
+  border-radius: 20px;
 }
 .why-list {
   list-style: none;
@@ -566,9 +596,9 @@ body.menu-open {
 }
 .team-photo {
   width: 100%;
-  aspect-ratio: 3/4;
+  aspect-ratio: 3/3;
   object-fit: cover;
-  border-radius: 2px;
+  border-radius: 20px;
   margin-bottom: 1.2rem;
   filter: grayscale(0.15);
 }
