@@ -3,16 +3,16 @@
    ========================================================================== */
 :root {
   --porcelain: #fbfaf7;
-  --porcelain-alt: #f1eee6;
+  --porcelain-alt: #f6f2e7;
   --ink: #152b2b;
   --ink-soft: #24413f;
-  --eucalyptus: #2f6f62;
+  --eucalyptus: #2f7c6d;
   --eucalyptus-light: #dce9e4;
   --coral: #e8846b;
   --coral-dark: #d66a4f;
   --sage: #7c8a83;
   --line: #dad4c7;
-  --line-dark: #2e4947;
+  --line-dark: #2e605d;
 
   --font-display: "Fraunces", serif;
   --font-body: "Manrope", sans-serif;
@@ -33,6 +33,11 @@ body {
   color: var(--ink);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+}
+
+#arriba {
+  background-color: var(--ink-soft);
+  border: var(--line);
 }
 
 ::selection {
@@ -513,7 +518,7 @@ body.menu-open {
 .service-card:hover {
   border-color: var(--eucalyptus);
   transform: translateY(-6px);
-  box-shadow: 0 20px 40px -20px rgba(21, 43, 43, 0.25);
+  box-shadow: 0 20px 40px -20px rgba(41, 97, 97, 0.25);
 }
 .service-tag {
   font-family: var(--font-mono);

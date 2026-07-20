@@ -231,4 +231,21 @@ document.addEventListener("DOMContentLoaded", function () {
     gsap.from(success, { opacity: 0, y: -10, duration: 0.5 });
     form.reset();
   });
+
+  /* -------------------------------------------------
+      boton "arriba" scroll to top  
+    --------------------------------------------- */
+  var btnArriba = document.getElementById("arriba");
+
+  btnArriba.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+    // ocultar el boton "arriba" cuando el usuario esta en la parte superior de la pagina
+    if (window.scrollY == 0) {
+      btnArriba.style.display = "none";
+    } else {
+      btnArriba.style.display = "block";
+    }
+  });
 });
